@@ -47,7 +47,7 @@ public class TrainView implements View {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Train ID: " + model.getTrainID() + "   ");
         stringBuilder.append("Passengers capacity: " + (new TrainManager(model)).getPassengersCapacity() + "   ");
-        stringBuilder.append("Weight capacity: " + (new TrainManager(model)).getPassengersCapacity());
+        stringBuilder.append("Weight capacity: " + (new TrainManager(model)).getWeightCapacity());
         showMessage(stringBuilder.toString());
         showTrainCarsViews();
     }
